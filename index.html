@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type="text"],button
+            {
+                margin:10px;
+                display:block;
+            }
+            table,td,th {
+                border :1px solid black;
+               border-collapse:collapse; 
+              }
+        </style>
+
+    </head>
+    <body>
+       Name: <input type="text" placeholder="Enter your name" id="n1">
+       E-mail id: <input type="text" placeholder="Enter your mail-id" id="n2">
+       <button id="add">Add</button>
+       <table style="width:50%" id="Mytable" >
+           <thead>
+         <tr>
+           <th style="width:10%">ID</th>
+           <th style="width:30%">Name</th>
+           <th style="width:30%">E-mail</th>
+           <th style="width:0%">Actions</th>
+         </tr>
+           </thead>
+           <tbody id="table-body">
+            
+
+           </tbody>
+       </table>
+       <script src="./index.js"></script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TODO</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-4">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="n1" />
+            </div>
+            <div class="col-4">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="n2" />
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary btn-md px-4" id="add">Add</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-8">
+                <table id="Mytable" class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                  </table>
+                  <script src="./index.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
